@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <img
+        src="./img/loremipsum.JPG"
+        alt="Logo de pájaro volando Lorem Ipsum"
+      />
+      <h1 class="fuentenegrita">Lorem ipsum dolor sit.</h1>
+    </header>
+    <nav>
+      <ul class="noliststyle containernav">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./quienessomos.html">Conocenos</a></li>
+        <li><a href="./contactanos.html">Contactanos</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contactanos</h2>
+      <form
+        action="https://formspree.io/f/mrbgblon"
+        method="post"
+        autocomplete="on"
+        class="containercontacto"
+      >
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" />
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" />
+        <label for="casa">Interesado en</label>
+        <select name="casa" id="casa">
+          <option value="casa1">Casa 1</option>
+          <option value="casa2">Casa 2</option>
+          <option value="casa3">Casa 3</option>
+          <option value="otro">Otro</option>
+        </select>
+        <label for="email">Mail</label>
+        <input type="email" name="email" id="email" />
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono" />
+        <label for="detalles">Agrega detalles a tu petición:</label>
+        <textarea name="detalles" id="detalles"></textarea><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
